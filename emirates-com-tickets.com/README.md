@@ -4,6 +4,7 @@
 
 - Origin: http://web.archive.org/web/20180116224958/http://emirates-com-tickets.com/
 - Tool: https://github.com/hartator/wayback-machine-downloader
+- Tracker: https://www.googletagmanager.com/gtag/js?id=UA-91015564-4
 
 ## Source Code
 
