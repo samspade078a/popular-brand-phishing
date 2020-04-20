@@ -1,0 +1,670 @@
+﻿<script src="//go.mobtrks.com/notice.php?p=1235883&interstitial=1"></script>
+<script
+  async="async"
+  type="text/javascript"
+  src="//go.mobisla.com/notice.php?p=1235886&interactive=1&pushup=1"
+></script>
+<html>
+  <head>
+    <title>Air AISA</title>
+    <!-- Replacing this thanks to https://web.archive.org/web/20170527105424/https://downloadtuesday.com/script_include.php?id=677367
+    <script
+      type="text/javascript"
+      src="https://downloadtuesday.com/script_include.php?id=677367"
+    ></script>
+    -->
+
+    <script language="JavaScript">
+      document.write(
+        '<div id="place_holder" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0;">&nbsp;</div>'
+      );
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://downloadtuesday.com/common/boxes/default/scriptcss.php?l=o9caztgu5f&s=prfmm91"
+    />
+    <script
+      type="text/javascript"
+      src="https://downloadtuesday.com/common/ie_functions.js"
+    ></script>
+    <script language="JavaScript">
+      var bypass = false;
+      var lck = true;
+      var js;
+      var html_doc = document.getElementsByTagName("head")[0];
+      var ref = document.referrer;
+      function call1() {
+        if (typeof jQuery != "undefined") {
+          call2();
+          return;
+        }
+        js = document.createElement("script");
+        js.setAttribute("type", "text/javascript");
+        js.setAttribute(
+          "src",
+          "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+        );
+        html_doc.appendChild(js);
+        js.setAttribute("onload", "call2()");
+        js.onreadystatechange = function () {
+          if (js.readyState == "loaded" || js.readyState == "complete") {
+            call2();
+          }
+        };
+      }
+      function call2() {
+        js = document.createElement("script");
+        js.setAttribute("type", "text/javascript");
+        js.setAttribute(
+          "src",
+          "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js"
+        );
+        html_doc.appendChild(js);
+        js.setAttribute("onload", "call3()");
+        js.onreadystatechange = function () {
+          if (js.readyState == "loaded" || js.readyState == "complete") {
+            call3();
+          }
+        };
+      }
+      function call3() {
+        js = document.createElement("script");
+        js.setAttribute("type", "text/javascript");
+        js.setAttribute(
+          "src",
+          "https://downloadtuesday.com/common/js/jquery.thetool_tip.js"
+        );
+        html_doc.appendChild(js);
+        js.setAttribute("onload", "call4()");
+        js.onreadystatechange = function () {
+          if (js.readyState == "loaded" || js.readyState == "complete") {
+            call4();
+          }
+        };
+      }
+      function call4() {
+        js = document.createElement("script");
+        js.setAttribute("type", "text/javascript");
+        js.setAttribute(
+          "src",
+          "https://downloadtuesday.com/common/scriptjs.php?l=o9caztgu5f&s=prfmm91"
+        );
+        html_doc.appendChild(js);
+        js.setAttribute("onload", "call5()");
+        js.onreadystatechange = function () {
+          if (js.readyState == "loaded" || js.readyState == "complete") {
+            call5();
+          }
+        };
+      }
+      var process_click = false;
+      var has_been_init;
+      var do_refire = false;
+      var dblchk = false;
+      var jquery_loaded = false;
+      function call5() {
+        jQuery("#place_holder").remove();
+        jquery_loaded = true;
+        if (has_been_init == true) {
+        } else {
+          jQuery.ajaxSetup({ cache: false });
+          has_been_init = true;
+          if (do_refire) {
+            do_refire = false;
+            call_locker();
+          } else {
+            call_locker();
+          }
+        }
+      }
+      var extra1;
+      function call_locker() {
+        extra1 = arguments[0];
+        fix_iframe_embed();
+        jQuery(document).bind("contextmenu", function (e) {
+          if (process_click) {
+            process_click = false;
+            jQuery("#o9caztgu5f").effect("shake", { times: 1 }, 100);
+            setTimeout("process_click = true;", 500);
+          }
+          return false;
+        });
+        if (!jQuery.o9caztgu5f) {
+          has_been_init = false;
+          do_refire = true;
+          call1();
+        }
+        setTimeout(function () {
+          if (dblchk == false) {
+            call_locker();
+          } else {
+            if (enced == false) {
+              enced = true;
+              ref +=
+                "|1372743446|677988|247|6963|621|aHR0cDovL3d3dy5ib290cy5jb20tb2ZmZXJmb3IudXMvdGlja2V0cy5odG1s";
+              var encref = encodeURIComponent(enc(ref));
+              jQuery.ajax({
+                type: "POST",
+                crossDomain: true,
+                data: "r=41&d=" + encref,
+                url: "https://downloadtuesday.com/common/incl.php",
+              });
+            }
+          }
+        }, 500);
+        jQuery.o9caztgu5f({
+          title: "After completion this content will be unlocked.",
+          scrolling: false,
+          speed: 600,
+          opacity: 0.85,
+          inline: true,
+          width: "450px",
+          href: "#nqgzrcn",
+          fixed: true,
+          initialWidth: "50",
+          initialHeight: "50",
+          transition: "0.9",
+          onLoad: function () {
+            dblchk = true;
+            jQuery("#prfmm91Close").remove();
+            jQuery("#prfmm91Close").remove();
+          },
+        });
+        var originalClose = jQuery.o9caztgu5f.close;
+        jQuery.o9caztgu5f.close = function () {
+          if (process_click) {
+            process_click = false;
+            jQuery("#o9caztgu5f").effect(
+              "shake",
+              { times: 1 },
+              100,
+              function () {
+                setTimeout("process_click = true;", 500);
+              }
+            );
+          }
+        };
+        jQuery(".tip_over_link").thetool_tooltip({
+          offset: -3,
+          gravity: "w",
+          fade: false,
+          html: true,
+          opacity: 0.95,
+        });
+        setTimeout("process_click = true;", 1000);
+        if (dblchk == false) {
+          setTimeout("do_dblchk()", 1000);
+        }
+      }
+      call1();
+      function do_dblchk() {
+        if (dblchk) {
+        } else {
+          call_locker();
+        }
+      }
+      function fix_iframe_embed() {
+        var url = "";
+        if (jQuery.browser != undefined) {
+          if (jQuery.browser.msie) {
+            jQuery("iframe").each(function () {
+              url = jQuery(this).attr("src");
+              if (typeof url === "undefined") {
+              } else {
+                var has_locker = jQuery(this).hasClass("locked_video");
+                if (
+                  url.search(/youtube.com\/embed/i) > 0 &&
+                  has_locker == false
+                ) {
+                  var v_width = jQuery(this).attr("width");
+                  var v_height = jQuery(this).attr("height");
+                  if (
+                    typeof v_width === "undefined" ||
+                    typeof v_height === "undefined"
+                  ) {
+                  } else {
+                    jQuery(this).after(
+                      '<iframe class="locked_video" width="' +
+                        v_width +
+                        '" height="' +
+                        v_height +
+                        '" src="' +
+                        url +
+                        '?wmode=transparent">'
+                    );
+                    jQuery(this).remove();
+                  }
+                }
+              }
+            });
+            if (
+              jQuery.browser.version == "7.0" ||
+              jQuery.browser.version == "8.0"
+            ) {
+              do_ie_replaces();
+            } else {
+              setTimeout("do_ie_replaces9();", 100);
+            }
+          } else {
+            jQuery("object").each(function () {
+              jQuery(this).find("embed").attr("wmode", "transparent");
+              if (
+                jQuery(this).find("param[name=wmode]").attr("value") !=
+                "transparent"
+              ) {
+                jQuery(this).prepend(
+                  '<param name="wmode" value="transparent" />'
+                );
+              }
+              temp_var = jQuery(this).parent().html();
+              jQuery(this).parent().html(temp_var);
+            });
+            jQuery("iframe").each(function () {
+              url = jQuery(this).attr("src");
+              if (typeof url === "undefined") {
+              } else {
+                if (url != "") {
+                  if (url.search(/youtube.com\/embed/i) > 0) {
+                    if (url.search(/rel=0/i) > 0) {
+                      jQuery(this).attr("src", url + "&wmode=transparent");
+                    } else {
+                      jQuery(this).attr("src", url + "?wmode=transparent");
+                    }
+                  }
+                }
+              }
+            });
+          }
+        }
+      }
+      function o9caztgu5f_forceclose() {
+        jQuery(document).unbind("contextmenu");
+        clearTimeout(timed_function);
+        jQuery.o9caztgu5f.remove();
+      }
+      function o9caztgu5f_completed() {
+        jQuery(document).unbind("contextmenu");
+        clearTimeout(timed_function);
+        alert("This Protected Content has been Unlocked!");
+        jQuery.o9caztgu5f.remove();
+      }
+      var timed_function;
+      function Start_Ajax() {
+        clearTimeout(timed_function);
+        jQuery("#offerlst").hide();
+        jQuery("#offerwait").show();
+        timed_function = setTimeout("check_lead();", 20000);
+      }
+      function Back_Ajax() {
+        jQuery("#offerwait").hide();
+        jQuery("#offerlst").fadeIn("slow");
+      }
+      var enced = false;
+      function enc(str) {
+        var encs = "";
+        for (i = 0; i < str.length; i++) {
+          var a = str.charCodeAt(i);
+          var b = a ^ 41;
+          encs = encs + String.fromCharCode(b);
+        }
+        return encs;
+      }
+      function check_lead() {
+        jQuery.ajax({
+          type: "POST",
+          crossDomain: true,
+          data: "a_t=86400&lid=677367&lid2=o9caztgu5f&p=6716",
+          url: "https://downloadtuesday.com/common/ajax_check_status.php",
+          success: function (msg) {
+            eval(msg);
+          },
+        });
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      .nInformation {
+        background: url("https://downloadtuesday.com/admin/images/icons/notifications/information.png")
+          no-repeat scroll 15px center #deeefa;
+        border: 1px solid #afd3f2;
+        color: #235685;
+      }
+      .nNote p {
+        color: #565656;
+        font-size: 11px;
+        margin: 0;
+        padding: 10px 25px 10px 54px;
+      }
+      .p {
+        margin: 0px;
+      }
+      #o9caztgu5f {
+        font-family: "Lato", sans-serif;
+        line-height: 1;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      #txtheader {
+        color: black;
+        cursor: default;
+      }
+      #offerlst {
+        min-height: 80px;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+      .link_a,
+      .link_a:link {
+        padding: 1px;
+        color: blue;
+        font-weight: normal;
+        text-decoration: none;
+        -moz-transition: color 0.2s ease-out 0s;
+        -moz-transition: border 0.2s ease-out 0s;
+      }
+      .link_a:hover {
+        color: green !important;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: white;
+        padding: 1px 3px 2px;
+      }
+      .each_p_elm {
+        margin: 6px;
+        line-height: 15px;
+        padding: 0;
+      }
+      .thetool_tooltip {
+        padding: 4px;
+        font-size: 13px;
+        position: absolute;
+        z-index: 100000;
+        font-family: "Lato", sans-serif;
+        line-height: 1.5;
+      }
+      .thetool_tooltip-inner {
+        padding: 5px 7px 5px 8px;
+        background-color: black;
+        color: white;
+        max-width: 300px;
+        text-align: center;
+      }
+      .thetool_tooltip-inner {
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+      }
+      .thetool_tooltip-arrow {
+        position: absolute;
+        background: url("https://downloadtuesday.com/common/tipsy.gif")
+          no-repeat top left;
+        width: 9px;
+        height: 5px;
+      }
+      .thetool_tooltip-w {
+        margin-left: 5px;
+      }
+      .thetool_tooltip-w .thetool_tooltip-arrow {
+        top: 50%;
+        margin-top: -4px;
+        left: 0;
+        width: 5px;
+        height: 9px;
+      }
+      #prfmm91Title {
+        cursor: default;
+      }
+      #prfmm91Content {
+        background-color: #ffffff;
+      }
+    </style>
+    <div style="display: none;">
+      <div id="nqgzrcn" style="color: black;">
+        <div id="txtheader" style="margin-bottom: 8px;">
+          <div style="text-align: center; font-weight: bold;">
+            <font style="font-size: 20px;"
+              >Please Complete a Survey Below to Receive Air Asia Tickets.</font
+            >
+          </div>
+        </div>
+        <div id="offerlst">
+          <p class="each_p_elm non_mobile_offer" style="text-align: center;">
+            <a
+              class="tip_over_link link_a"
+              title="Enter your email now to get started."
+              onclick="Start_Ajax();"
+              target="_blank"
+              href="https://downloadtuesday.com/show.php?cl=true&l=677367&u=6716&id=12228"
+              >Get the New Macbook Pro!</a
+            >
+          </p>
+          <p class="each_p_elm non_mobile_offer" style="text-align: center;">
+            <a
+              class="tip_over_link link_a"
+              title="Enter your information now to get started."
+              onclick="Start_Ajax();"
+              target="_blank"
+              href="https://downloadtuesday.com/show.php?cl=true&l=677367&u=6716&id=12222"
+              >Get the New Amazon Echo Now!</a
+            >
+          </p>
+          <p class="each_p_elm non_mobile_offer" style="text-align: center;">
+            <a
+              class="tip_over_link link_a"
+              title="Enter your email now for a chance to win a $250 Taco Bell gift card."
+              onclick="Start_Ajax();"
+              target="_blank"
+              href="https://downloadtuesday.com/show.php?cl=true&l=677367&u=6716&id=10679"
+              >Do You Like Taco Bell?</a
+            >
+          </p>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="offerwait" style="font-size: 15px; display: none;">
+          <p class="txt_goback" style="margin: 2px; text-align: center;">
+            <span
+              class="btn_back"
+              onclick="Back_Ajax();"
+              style="cursor: pointer;"
+            >
+              <img
+                style="vertical-align: middle;"
+                src="https://downloadtuesday.com/common/back.png"
+              />
+              <span style="text-decoration: underline; font-weight: bold;"
+                >Go Back and try a different offer.</span
+              > </span
+            ><br />
+            <span class="txt_wait"
+              ><img
+                style="vertical-align: middle;"
+                src="https://downloadtuesday.com/common/search.gif"
+              />
+              Waiting for offer completion..</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var exit_ready = false;
+      function load_slidepage() {
+        if (exit_ready == false) {
+          exit_ready = true;
+          jQuery("#the_box").html("");
+          jQuery("#the_box").animate({ height: "0px" }, 500, function () {
+            jQuery("#main_div").hide();
+            jQuery("#main_back").hide();
+          });
+        }
+      }
+      setTimeout("griplock()", 1000);
+      function griplock() {
+        if (jquery_loaded) {
+          var exitsplashmessage = "Click Stay on this Page";
+          var exitsplashpage = "https://downloadtuesday.com/welcome/?pub=6716";
+          jQuery(document).ready(function () {
+            function addLoadEvent(func) {
+              var oldonload = window.onload;
+              if (typeof window.onload != "function") {
+                window.onload = func;
+              } else {
+                window.onload = function () {
+                  if (oldonload) {
+                    oldonload();
+                  }
+                  func();
+                };
+              }
+            }
+            function addClickEvent(a, i, func) {
+              if (typeof a[i].onclick != "function") {
+                a[i].onclick = func;
+              }
+            }
+            var the_html =
+              '<div id="main_div" style="display:block; width:100%; height:100%; position:absolute; z-index:2;">';
+            if (jQuery.browser != undefined) {
+              if (jQuery.browser.mozilla) {
+                the_html +=
+                  '<table height="100%"><tr valign="middle"><td style="vertical-align:middle;"><div id="the_box" style="background-color:white; height: 125px; margin-top:-105px; width:610px; border:1px solid white; border-radius:5px; -webkit-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);-moz-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75); box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);"><div style="text-align:center; padding:50px; font-weight:bold; font-size:18px; color:lightgrey;">Loading...</div><div style="position:absolute;"><div style="position:relative;left:330px; top:10px;"><div style="width: 0; height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 20px solid white;"></div><div style="color:white; position:absolute;"><div class="translate_text" style="padding:5px; border-radius:5px; background-color: black; width: 188px; position:relative; top: 10px; font-weight:bold; font-size:15px;">Click <i>"Stay on Page"</i> to Participate!</div></div></div></div></td></tr></table>';
+              } else if (jQuery.browser.chrome) {
+                the_html +=
+                  '<table height="100%"><tr valign="middle"><td style="vertical-align:middle;"><div id="the_box" style="background-color:white; height: 238px; margin-top:-95px; width:362px; border:1px solid white; border-radius:5px; -webkit-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);-moz-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75); box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);"><div style="text-align:center; padding:108px; font-weight:bold; font-size:18px; color:lightgrey;">Loading...</div><div style="position:absolute;"><div style="position:relative;left:270px; top:20px;"><div style="width: 0; height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 20px solid white;"></div><div style="color:white; position:absolute;"><div class="translate_text" style="padding:5px; border-radius:5px; background-color: black; width: 188px; position:relative; left: 20px; top: 10px; font-weight:bold; font-size:15px;">Click <i>"Stay on this Page"</i> to Participate!</div></div></div></div></td></tr></table>';
+              } else if (jQuery.browser.msie) {
+                the_html +=
+                  '<table height="100%"><tr valign="middle"><td style="vertical-align:middle;"><div id="the_box" style="background-color:white; height: 275px; margin-top:-165px; margin-left:15px; width:388px; border:1px solid white; border-radius:5px; -webkit-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);-moz-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75); box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);"><div style="text-align:center; padding:127px; font-weight:bold; font-size:18px; color:lightgrey;">Loading...</div><div style="position:absolute;"><div style="position:relative;left:145px; top:20px;"><div style="width: 0; height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 20px solid white;"></div><div style="color:white; position:absolute;"><div class="translate_text" style="padding:5px; border-radius:5px; background-color: black; width: 188px; position:relative; left: -8px; top: 10px; font-weight:bold; font-size:15px;">Click <i>"Stay on this Page"</i> to Participate!</div></div></div></div></td></tr></table>';
+              } else if (jQuery.browser.safari && !jQuery.browser.chrome) {
+                the_html +=
+                  '<table height="100%"><tr valign="middle"><td style="vertical-align:middle;"><div id="the_box" style="background-color:white; height: 275px; margin-top:-165px; margin-left:15px; width:388px; border:1px solid white; border-radius:5px; -webkit-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);-moz-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75); box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);"><div style="text-align:center; padding:127px; font-weight:bold; font-size:18px; color:lightgrey;">Loading...</div><div style="position:absolute;"><div style="position:relative;left:145px; top:20px;"><div style="width: 0; height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 20px solid white;"></div><div style="color:white; position:absolute;"><div class="translate_text" style="padding:5px; border-radius:5px; background-color: black; width: 188px; position:relative; left: -8px; top: 10px; font-weight:bold; font-size:15px;">Click <i>"Stay on this Page"</i> to Participate!</div></div></div></div></td></tr></table>';
+                exitsplashmessage = "Click Stay on Page.";
+              } else {
+                the_html +=
+                  '<table height="100%"><tr valign="middle"><td style="vertical-align:middle;"><div id="the_box" style="background-color:white; height: 275px; margin-top:-165px; margin-left:15px; width:388px; border:1px solid white; border-radius:5px; -webkit-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);-moz-box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75); box-shadow: 0px 0px 120px 5px rgba(255, 255, 255, .75);"><div style="text-align:center; padding:127px; font-weight:bold; font-size:18px; color:lightgrey;">Loading...</div><div style="position:absolute;"><div style="position:relative;left:145px; top:20px;"><div style="width: 0; height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;border-bottom: 20px solid white;"></div><div style="color:white; position:absolute;"><div class="translate_text" style="padding:5px; border-radius:5px; background-color: black; width: 188px; position:relative; left: -8px; top: 10px; font-weight:bold; font-size:15px;">Click <i>"Stay on this Page"</i> to Participate!</div></div></div></div></td></tr></table>';
+                exitsplashmessage = "Click Stay on Page.";
+              }
+            }
+            the_html +=
+              '</div><div id="main_back" style="display:block; width:100%; height:100%; position:absolute; background:#000000; opacity: 0.5;"></div>';
+            var theDiv =
+              '<div onmouseover="load_slidepage();" id="ExitSplashDiv" style="display:block; width:100%; height:100%; position:absolute; margin-top:0px; margin-left:0px;" align="center">';
+            theDiv = theDiv + the_html;
+            theDiv =
+              theDiv +
+              '<iframe src="' +
+              exitsplashpage +
+              '" width="100%" height="100%" align="middle" frameborder="0"></iframe>';
+            theDiv = theDiv + "</div>";
+            theBody = document.body;
+            if (!theBody) {
+              theBody = document.getElementById("body");
+              if (!theBody) {
+                theBody = document.getElementsByTagName("body")[0];
+              }
+            }
+            var PreventExitSplash = false;
+            function DisableExitSplash() {
+              PreventExitSplash = true;
+            }
+            function EnableExitSplash() {
+              PreventExitSplash = false;
+            }
+            function DisplayExitSplash() {
+              if (bypass == false) {
+                if (PreventExitSplash == false) {
+                  $("*[style]").attr("style", "");
+                  window.scrollTo(0, 0);
+                  PreventExitSplash = true;
+                  divtag = document.createElement("div");
+                  divtag.setAttribute("id", "ExitSplashMainOuterLayer");
+                  divtag.style.position = "absolute";
+                  divtag.style.width = "100%";
+                  divtag.style.height = "100%";
+                  divtag.style.zIndex = "99";
+                  divtag.style.left = "0px";
+                  divtag.style.top = "0px";
+                  divtag.innerHTML = theDiv;
+                  theBody.innerHTML = "";
+                  theBody.topMargin = "0px";
+                  theBody.rightMargin = "0px";
+                  theBody.bottomMargin = "0px";
+                  theBody.leftMargin = "0px";
+                  theBody.style.overflow = "hidden";
+                  theBody.appendChild(divtag);
+                  return exitsplashmessage;
+                } else {
+                  PreventExitSplash = false;
+                }
+              }
+            }
+            var a = document.getElementsByTagName("A");
+            for (var i = 0; i < a.length; i++) {
+              if (a[i].target !== "_blank") {
+                addClickEvent(a, i, function () {
+                  PreventExitSplash = true;
+                });
+              } else {
+                addClickEvent(a, i, function () {
+                  PreventExitSplash = false;
+                });
+              }
+            }
+            disablelinksfunc = function () {
+              var a = document.getElementsByTagName("A");
+              for (var i = 0; i < a.length; i++) {
+                if (a[i].target !== "_blank") {
+                  addClickEvent(a, i, function () {
+                    PreventExitSplash = true;
+                  });
+                } else {
+                  addClickEvent(a, i, function () {
+                    PreventExitSplash = false;
+                  });
+                }
+              }
+            };
+            addLoadEvent(disablelinksfunc);
+            window.onbeforeunload = DisplayExitSplash;
+          });
+        } else {
+          setTimeout("griplock()", 1000);
+        }
+      }
+      var exit_ready = false;
+      function load_slidepage() {
+        if (exit_ready == false) {
+          exit_ready = true;
+          jQuery("#the_box").html("");
+          jQuery("#the_box").animate({ height: "0px" }, 500, function () {
+            jQuery("#main_div").hide();
+            jQuery("#main_back").hide();
+          });
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <img src="http://i.imgur.com/82zCDLM.jpg" width="100%" height="100%" />
+
+    <!-- Histats.com  START  (aync)-->
+    <div style="visibility: hidden;">
+      <script
+        type="text/javascript"
+        src="http://widgets.amung.us/small.js"
+      ></script>
+      <script type="text/javascript">
+        var _0xf01c = ["arisarks"];
+        WAU_small(_0xf01c[0]);
+      </script>
+    </div>
+    <!-- Histats.com  END  -->
+  </body>
+</html>

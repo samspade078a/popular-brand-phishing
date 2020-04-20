@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from getdoctopdf.com/doctopdf/doctopdfpbu/n/zz by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Apr 2020 20:26:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <title>DoctoPDF - Doc to PDF File Converter</title>
+  <link rel="stylesheet" type="text/css" href="http://static.getdoctopdf.com/doctopdfpbu/style/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://static.getdoctopdf.com/doctopdfpbu/style/dialog.css" />
+  <link rel="stylesheet" type="text/css" href="http://static.getdoctopdf.com/doctopdfpbu/style/loaders.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://static.getdoctopdf.com/doctopdfpbu/favicon.ico">
+  <script defer type="text/javascript" src="http://static.getdoctopdf.com/js/vn2143cxz67m.js"></script>
+  <script defer type="text/javascript" src="http://static.getdoctopdf.com/js/date.min.js"></script>
+  <script type="text/javascript" src="http://static.getdoctopdf.com/js/ice.2.2.7.min.js"></script>
+  <script type="text/javascript">var lpConfigParams = {"ext_type":"internal","ext_id":"hdndlbkgjccjcplppfljaeiidgkjccaj","aflt_prefix":"pdf","cookies":["jmbextts"],"checker":"local","fileLocation":"skin/icons/16.png","domain":"getdoctopdf.com","cookie_domain":"getdoctopdf.com","table":"installcore_extensions","offer":"FromDocsToPdf","debugMode":false,"language":"en","arrow":true,"loader":true,"confirmDialog":true,"backgroundPage":false,"darkenScreen":true}</script>
+  <script type="text/javascript" src="http://static.getdoctopdf.com/js/init_extensions_lp.1.6.7.min.js"></script>
+  <script>
+    var color = lpConfigParams.ButtonColor;
+    if (color) {
+      changeButtons();
+    }
+
+    function changeButtons() {
+      var style = document.createElement('style');
+      var shade = shadeColor("#" + color, 0.5);
+      style.type = 'text/css';
+      document.getElementsByTagName('head')[0].appendChild(style);
+
+      style.innerText = ".download-button { background: #" + color + " !important; }";
+      style.innerText += ".download-button:hover { background: " + shade + " !important; }";
+      style.innerText += "div.cdialog .dialog_buttons div.blue { background: #" + color + " !important; }";
+      style.innerText += "div.cdialog .dialog_buttons div.blue:hover { background: " + shade + " !important; }";
+    }
+
+    function shadeColor(color, percent) {
+      var f = parseInt(color.slice(1), 16),
+        t = percent < 0 ? 0 : 255,
+        p = percent < 0 ? percent * -1 : percent,
+        R = f >> 16,
+        G = f >> 8 & 0x00FF,
+        B = f & 0x0000FF;
+      return "#" + (0x1000000 + (Math.round((t - R) * p) + R) * 0x10000 + (Math.round((t - G) * p) + G) * 0x100 + (Math
+        .round((t - B) * p) + B)).toString(16).slice(1);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      var text = lpConfigParams.ButtonText;
+      if (text) {
+        changeText();
+      }
+
+      function changeText() {
+        document.getElementById("download-button").innerHTML = text;
+      }
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="http://static.getdoctopdf.com/shared/css/arrow.css" />
+  <link rel="stylesheet" type="text/css" href="http://static.getdoctopdf.com/shared/css/cdialog.css" />
+  <script type="text/javascript">lpConfigParams.store_prefix = '../../../index.html'; document.addEventListener("DOMContentLoaded", function() {   if (lpConfigParams.userBrw === 'ch') {     buttons = document.getElementsByClassName('download_button');     for (var i = 0; i < buttons.length; i++) {       if (!buttons[i].classList.contains('googlechrome')) {         var parent = buttons[i].parentElement;         var btn_disclaimer = document.createElement('div');         btn_disclaimer.classList.add('button-disclaimer');         btn_disclaimer.innerHTML = 'This extension modifies your address bar settings, See our <a target="_blank" href="http://support.' + lpConfigParams.domain + '/eula.html" class="eula_ff">EULA</a> & <a target="_blank" href="http://support.' + lpConfigParams.domain + '/pp.html" class="pp_ff">Privacy Policy</a>';         parent.insertBefore(btn_disclaimer, buttons[i]);       }     }   } });</script>
+</head>
+
+<body>
+  <div class="cdialog centered" id="confirm_dialog">   <div class="cdlg-title" style="font-size: 19px; line-height: 2;font-family: 'Open Sans', sans-serif;"> It seems that you closed the extension page.<br> Are you sure you want to cancel the installation? </div>   <div class="cdlg-btn-container" style="width: 90%;">     <div class="cancel btn skip_dialog_button" style="border: 1px solid #1678df;background-color: #1678df;color: #fff;">Yes</div>     <div class="try-again btn download_dialog_button" style="position: absolute;right: 20px;" onclick="toggle('darken_background'); return true;">No</div>   </div> </div>
+  <div id="arrow_dialog">
+    <div id="arrow_dialog_mv_container">
+      <div id="arrow_dialog_mv">
+        <span id="blue-arrow_text">
+          <b><span>You're almost done!</span></b><br>
+          <span>Click 'Add' to finish installation</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="headercontainer">
+      <div class="headerleftcontent">
+        <img src="http://static.getdoctopdf.com/doctopdfpbu/img/logo.png">
+      </div>
+      <div class="headerrightcontent">
+        DoctoPDF Offers a Document Converter Tool and Free Web Search on your Chrome New Tab.
+      </div>
+    </div>
+    <div class="middle">
+      <h1>Free Doc to PDF Files Converter</h1>
+    </div>
+    <div class="maincontainer">
+      <div class="leftcontent">
+        <img src="http://static.getdoctopdf.com/doctopdfpbu/img/pc.png">
+      </div>
+      <div class="rightcontent">
+        <div class="lp-text">
+          <ul>
+            <li>Convert Doc File to PDF Format in Seconds</li>
+            <li>Quick Access to Files Converter Tool</li>
+            <li>DoctoPDF a Simple Doc to PDF Converter Tool</li>
+          </ul>
+        </div>
+        <div class="download_area">
+          <div class="addtoarrow"></div>
+          <div id="download-button" class="download-button btn cta-btn download_button">Add to Chrome</div>
+        </div>
+        <div class="disclaimer">By clicking the button above you agree to install DocToPDF Chrome extension and have read the <a href="http://support.getdoctopdf.com/eula.html" target="_blank">EULA</a> & <a href="http://support.getdoctopdf.com/pp.html" target="_blank">Privacy Policy</a></div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div class="container">
+      <div class="trademark"></div>
+      <ul>
+        <li><a target="_blank" href="http://support.getdoctopdf.com/eula.html">EULA</a></li>
+        <li><a target="_blank" href="http://support.getdoctopdf.com/pp.html">Privacy Policy</a></li>
+        <li><a target="_blank" href="http://support.getdoctopdf.com/faq.html">FAQ</a></li>
+        <li><a target="_blank" href="#"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <div id="loader" class="loader gears"></div>
+</body>
+
+
+<!-- Mirrored from getdoctopdf.com/doctopdf/doctopdfpbu/n/zz by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Apr 2020 20:26:42 GMT -->
+</html>

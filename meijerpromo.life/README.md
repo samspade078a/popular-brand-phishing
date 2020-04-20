@@ -4,7 +4,9 @@
 
 - Origin: http://web.archive.org/web/20171229225824/http://meijerpromo.life/
 - Tool: https://github.com/hartator/wayback-machine-downloader
-- Tracker: https://www.googletagmanager.com/gtag/js?id=UA-50813529-6
+- Tracker:
+  - https://www.googletagmanager.com/gtag/js?id=UA-50813529-6
+  - http://sstatic1.histats.com/0.gif?1784537&101
 
 ## Source Code
 
