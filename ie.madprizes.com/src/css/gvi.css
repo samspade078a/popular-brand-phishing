@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	font-family: 'Oxygen';
+	background-color:#000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+	line-height:100%;
+}
+a:link {
+	color: #999999;
+	text-decoration:underline;
+}
+
+a:visited {
+	color: #999999;
+	
+}
+
+a:hover {
+    color: #999999;
+	text-decoration:underline;
+	
+}
+
+a:active {
+    color: #999999;
+	
+}
+.pricing_text{
+	font-size:14px;
+	text-align:center;
+	color:#FFFFFF;
+	line-height:100%;
+	
+}
+.container{
+	
+	background-image:url(../images/iphone7pinmobile.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	width:90%;
+	font-size:18px;
+	
+	margin:0 auto;
+	padding-top:200px;
+	
+}
+
+.pin_box{
+	background: #CCC;
+	width:90%;
+	font-size:18px;
+	padding: 10px 10px;
+	margin:0 auto;
+	-webkit-border-radius: 13;
+	-moz-border-radius: 13;
+	border-radius: 13px;
+	margin-bottom:5px;
+}
+
+.img{
+	width:100%;
+}
+
+
+.msisdn_box{
+	background: #eff2f0;
+	/*
+	background-image:url(../images/mobile.png);
+	background-repeat:no-repeat;
+	*/
+	color: #000000;
+	padding: 10px 10px;
+	margin:0 auto;
+	display:block !important;
+	width:90%;
+	-webkit-border-radius: 13;
+	-moz-border-radius: 13;
+	border-radius: 13px;
+	color: #000000;
+	border: solid #ffffff 2px;
+	font-size:18px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:10px;
+	
+}
+.form_button{
+	background: #ccffcd;
+	background-image: -webkit-linear-gradient(top, #ccffcd, #33cc34);
+	background-image: -moz-linear-gradient(top, #ccffcd, #33cc34);
+	background-image: -ms-linear-gradient(top, #ccffcd, #33cc34);
+	background-image: -o-linear-gradient(top, #ccffcd, #33cc34);
+	background-image: linear-gradient(to bottom, #ccffcd, #33cc34);
+	color: #000000;
+	padding: 10px 10px;
+	margin:0 auto;
+	display:block !important;
+	width:90%;
+	-webkit-border-radius: 13;
+	-moz-border-radius: 13;
+	border-radius: 13px;
+	color: #000000;
+	border: solid #333333 2px;
+	font-size:22px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	margin-bottom:10px;
+}
+@media only screen and (min-width:560px){
+	
+	.container{
+		width:850px;
+		background-image:url(../images/iphone7pin.jpg);
+		padding-top:320px;
+		
+	}
+	.pin_box{
+		width:350px;
+	}
+	.msisdn_box{
+		width:250px;
+		margin-top:10px;
+	}
+	.form_button{
+		width:250px;
+	}
+	.img{
+	width:750px;
+	}
+}

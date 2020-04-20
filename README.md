@@ -80,6 +80,7 @@ This is a non exhaustive list of all sites that have been known to participate a
 - disneylandparis.com-fevrierbillets.win
 - [disneylandparis.com-freikarten.online](./disneylandparis.com-freikarten.online/README.md)
 - disneylandparis.com-tombola.win
+- disneylp.com-tombola.win
 - [dollargeneral-new.us](./dollargeneral-new.us/README.md)
 - downloadtuesday.com
 - dunkindonutlive.us
@@ -159,8 +160,8 @@ This is a non exhaustive list of all sites that have been known to participate a
 - rlcontrol.de
 - rolẹx.com
 - rołex.com
-- ryanair.com.flytdeals.win
 - [ryair.win](./ryair.win/README.md)
+- ryanair.com.flytdeals.win
 - [ryanair-airways.us](./ryanair-airways.us/README.md)
 - [ryanair.com-airtime.com](./ryanair.com-airtime.com/README.md)
 - [ryanair.com-freechance.com](./ryanair.com-freechance.com/README.md)

@@ -4,6 +4,7 @@
 
 - Origin: http://web.archive.org/web/20180225160113/http://disney.land-paris-billets.win:80/loading.php
 - Tool: https://curl.haxx.se/
+- Tracker: https://whos.amung.us/stats/views/frdisney04/
 
 ## Network
 
@@ -59,3 +60,18 @@
 
 - index.html
 - [loading.php](./src/loading.php)
+
+## Stats
+
+### Visitors count
+
+44,375 unique visitors
+
+![](./stats/screenshot-whos.amung.us-2020.04.21-00_02_34.png)
+
+### Visitors locations
+
+Mainly France.
+
+![](./stats/screenshot-whos.amung.us-2020.04.21-00_02_49.png)
+![](./stats/screenshot-whos.amung.us-2020.04.21-00_02_59.png)

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/argos_mobile.css">
+    <script type="application/x-javascript">
+		this.top.location !== this.location && (this.top.location = this.location);
+		
+        window.addEventListener("load", function () {
+            setTimeout(function () { window.scrollTo(0, 1); }, 100);
+        });
+    </script>
+		<style>
+        .line_height {
+            line-height: 100%;
+			color:#666666;
+        }
+		.error-message{
+			color:#FFFFFF !important;
+            line-height: 120%;
+		}
+        </style>
+    <body>
+    
+    <div class="container-fluid container-max">
+	    <div class="row">
+            <div class="brand-header"> Answer correctly for your chance to win! <br>
+            </div>
+		    <img src="../images/argosmobile.png" />
+		</div>
+      <div class="row text-center question" style="padding:15px;">
+      <h4>Which vegetable is the national emblem of Wales? </h4>
+      <div class="col-md-4 text-center"> <a href="/2/index_13.jsp?gloid=4394db985a2b445986a7b7c741c17786&answer=1" class="btn green" role="button">The carrot</a><br>
+      </div>
+      <div class="col-md-4 text-center"> <a href="/2/index_13.jsp?gloid=4394db985a2b445986a7b7c741c17786&answer=0" class="btn green" role="button">The leek </a><br>
+      </div>
+      <div class="col-md-4 text-center"> <a href="/2/index_13.jsp?gloid=4394db985a2b445986a7b7c741c17786&answer=2" class="btn green" role="button">The cabbage</a><br>
+      </div>
+      <br>
+    </div>
+    </div>
+    <p class="terms_text" align="center">*MadPrizes.com is not affiliated with, sponsored by or endorsed by any of the listed products or retailers. Trademarks, service marks, logos (including, without limitation, the individual names of products and retailers) are the property of their respective owners.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

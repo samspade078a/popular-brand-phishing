@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/giftcards_mobile_v2.css">
+    <script type="application/x-javascript">
+		this.top.location !== this.location && (this.top.location = this.location);
+		
+        window.addEventListener("load", function () {
+            setTimeout(function () { window.scrollTo(0, 1); }, 100);
+        });
+    </script>
+
+    <body>
+    <div class="brand-header">MadPrizes presents your chance to<br>
+    </div>
+    <div class="container-fluid container-max">
+      <div class="row">
+        <img src="../images/giftcardsmobilev2-2.png">
+            </div>
+      <div class="row text-center correct">
+        <div class="col-md-12 text-center"><br>
+         
+<h4><strong>ENTER YOUR MOBILE NUMBER:</strong></h4>
+        </div>
+        <form action="http://www.glotxt.com/webapi/send-message-ie.jsp" method="get" id="enterButton">
+          <input name="msisdn" type="tel" id="msisdn" value="08" data-role="none">
+          <br>
+          <input name="return" type="hidden" value="http%3A%2F%2Fie.madprizes.com%2F2%2Findex_50.jsp">
+          <input name="gloid" type="hidden" value="54208910932f430f8ca43fb93c85c4a9">
+          <div class="col-md-12 text-center">
+            <a href="#" onclick="$(this).closest('form').submit()" id="number_submit" class="btn green" data-ajax="false">ENTER <span class="glyphicon glyphicon-chevron-right"></span> </a><br>
+            </div>
+        </form>
+        <br>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <p class="terms_text" align="center">This is a monthly competition, charges for entering into this prize draw will cost &#8364;7.50 for 1 digital competition entries. You will be billed 3 SMS at a premium rate of &#8364;2.50 each. <br><br>
+        The monthly draw closes on the last day of each month with the new entry period starting immediately afterwards. One prize is drawn for each month. Winners will be notified within 7 days of month end. Network charges may apply. By entering you permit GloTxt and its partners to contact you with related offers. Send stop to 57977 to unsubscribe at any time. By entering you permit GloTxt and its partners to contact you with related offers via SMS. To opt out of all promotional and marketing messages please send PROMOSTOP to 57977 or call 019038309. *MadPrizes.com is not affiliated with, sponsored by or endorsed by any of the listed products or retailers. Trademarks, service marks, logos (including, without limitation, the individual names of products and retailers) are the property of their respective owners. See <a href="terms_ie.jsp" target="_blank"><strong>Full Terms &amp; Conditions</strong></a> for details. Help? Call 019038309. Service promoted by GloTxt Ltd.</p>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

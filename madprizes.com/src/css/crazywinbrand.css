@@ -1,0 +1,152 @@
+	body{
+		font-family: 'Titillium Web', sans-serif;
+	}
+	
+	.brand-header {
+		max-width:1000px;
+		background-color:#00ad45;
+		padding:10px;
+		color:#FFFFFF;
+		font-style:bold;
+		text-align:center;
+		font-size:16px;
+	}
+	
+	html {
+	  position: relative;
+	  min-height: 100%;
+	}
+	body {
+	  /* Margin bottom by footer height */
+	  margin-bottom: 55px;
+	}
+	.footer {
+	  
+	  bottom: 0;
+	  width: 100%;
+	  /* Set the fixed height of the footer here */
+	}
+	
+	img {
+		width:100%;
+		height:auto;
+	}
+	.question{
+		background-color:#b4efcb;
+		margin-bottom:10px; 
+	}
+
+	
+	.container-max {
+		max-width:1000px;
+		
+	}
+	
+	.green {
+		color:#333333;
+		background-color:#fff;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px; 		
+		border-radius: 5px;
+		border: 2px solid #333333;
+		font-weight:bold;
+		padding: 3px;
+		line-height:1.45em;
+		margin-top:7px; 
+		width:100%;	
+		letter-spacing: 2px;
+		
+	}
+	
+	.red {
+	color:#FFFFFF;
+	background-color:#ee1c2e;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #333333;
+	font-weight:bold;
+	padding: 3px;
+	line-height:1.45em;
+	margin-top:7px;
+	width:100%;
+	letter-spacing: 2px;
+	}
+	
+	h3{
+		padding: 0px;
+		margin-top:0px;
+		margin-bottom:3px;
+	}
+	p{
+		line-height: 0.9em;
+	}
+	
+	
+	#msisdn{
+		-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		width: 90%;
+		text-align:center;
+		color:black;
+		font-size: 18px;
+		padding: 5px;
+		border:1px solid black;
+	}
+	
+	#msisdn-error{
+		-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75) !important;
+		width: 90%;
+		text-align:center;
+		color:black;
+		font-size: 18px;
+		padding: 5px;
+		border:2px solid #F00;
+	}
+	
+	.error-message{
+		color:#F00 !important;
+		font-weight: bold !important;
+	}
+	
+	.correct {
+		
+		text-decoration: none;
+		line-height:12px;
+		background-color: #b4efcb;
+		text-decoration: blink;
+		
+	}
+
+	
+	@media only screen and (min-height: 400px) 
+	 {
+		 
+	.green {
+		border: 3px solid #333333;
+		padding: 8px;
+		letter-spacing: 3px;
+		font-size: 24px;
+	}
+	
+	.red {
+		border: 3px solid #333333;
+		padding: 8px;
+		letter-spacing: 3px;
+		font-size: 24px;
+	}
+	
+	
+	#msisdn{
+		padding: 10px;
+	}
+	
+	#msisdn-error{
+		padding: 10px;
+	}
+
+	
+	}
