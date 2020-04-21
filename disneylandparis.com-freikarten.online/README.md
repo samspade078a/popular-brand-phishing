@@ -11,7 +11,6 @@
 ## Source Code
 
 - [index.html](./src/index.html)
-- [aldi.com.tickets-free.win/dl/final.html](../aldi.com.tickets-free.win/src/dl/final.html)
 
 ## Stats
 

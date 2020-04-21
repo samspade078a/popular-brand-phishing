@@ -2,17 +2,19 @@
 
 This is a non exhaustive list of all sites that have been known to participate at the same scam. Many of those sites are derived from the same template. Some are known to be at least domain that have been booked with the same intent (because from the same registrant).
 
+- [2k2.us](./2k2.us/README.md)
 - 3sgzz.gce8xz.ygwt.online
 - 345.airline-Tickets.2017emiratesgift.us
 - addidas-uk.us
 - adidạs.com
-- adıdas.de
+- [adıdas.de](./adıdas.de/README.md)
 - aeroflot-com.us
-- aeroflot-ticket.us
+- [aeroflot-ticket.us](./aeroflot-ticket.us/README.md)
 - affstrk.com
 - [airasia.com-2017-givea.us](./airasia.com-2017-givea.us/README.md)
-- aircanada-tickets.life
-- airfrance-offer.host
+- [airasia.com-2017-giveb.us](./airasia.com-2017-giveb.us/README.md)
+- [aircanada-tickets.life](./aircanada-tickets.life/README.md)
+- [airfrance-offer.host](./airfrance-offer.host/README.md)
 - aırfrance.com
 - airfrạnce.com
 - airfrancẹ.com
@@ -22,11 +24,17 @@ This is a non exhaustive list of all sites that have been known to participate a
 - airfṛance.com
 - aiṛfrance.com
 - airfryer.giveaways-fr.com
+- [airgift-com.us](./airgift-com.us/README.md)
+- [airline-com.us](./airline-com.us/README.md)
 - [airwayspoint.com](./airwayspoint.com/README.md)
 - airticketgrab.co
-- [aldi.com.tickets-free.win](./aldi.com.tickets-free.win/README.md)
 - aldi-us.us
+- [aldi-usa.store](./aldi-usa.store/README.md)
+- [aldi.com-4u.com](./aldi.com-4u.com/README.md)
+- [aldi.com-freecouponwinner.us](./aldi.com-freecouponwinner.us/README.md)
+- [aldi.com.tickets-free.win](./aldi.com.tickets-free.win/README.md)
 - aldigivers.us
+- [altontȯwers.com](./TODO)
 - areyouabot.net
 - bbdi3nxi.us
 - bedbathcoups.us
