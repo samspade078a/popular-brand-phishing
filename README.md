@@ -34,11 +34,14 @@ This is a non exhaustive list of all sites that have been known to participate a
 - [aldi.com-freecouponwinner.us](./aldi.com-freecouponwinner.us/README.md)
 - [aldi.com.tickets-free.win](./aldi.com.tickets-free.win/README.md)
 - aldigivers.us
-- [altontȯwers.com](./TODO)
+- [altontȯwers.com](./altontȯwers.com/README.md)
+- [altontowers.com-altuuncle.site](./altontowers.com-altuuncle.site/README.md)
+- [argentino-com.us](./argentino-com.us/README.md)
+- [au.madprizes.com](./au.madprizes.com/README.md)
 - areyouabot.net
-- bbdi3nxi.us
+- [bbdi3nxi.us](./bbdi3nxi.us/README.md)
 - bedbathcoups.us
-- boots.com-offerfor.us
+- [boots.com-offerfor.us](./boots.com-offerfor.us/README.md)
 - brusselsạirlines.com
 - c.spnccrzone.com
 - call.leadforce.click
